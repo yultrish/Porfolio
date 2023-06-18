@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header class="navigation">
+        <div class="brand">
+            <span>YulTrish</span>
+            <button class="btn">-</button>
+        </div>
+       <!--Tablet 600px-->
+        <nav class="small">
+            <ul>
+                <li><a href="index.html">H</a></li>
+                <li><a href="about.html">A</a></li>
+                <li class="active"><a href="contact.html">C</a></li>
+                <li><a href="project.html">P</a></li>
+            </ul>
+        </nav>
+        <section>
+
+            <!--Mobile and Normal screen 768px-->
+            <nav class="bigger"> 
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li class="active"><a href="contact.html">Contact</a></li>
+                    <li><a href="project.html">Project</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+    
+    <!--large screen-->
+    <main class="side">
+    <aside class="side-bar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="active"><a href="contact.html">Contact</a></li>
+            <li><a href="project.html">Project</a></li>
+        </ul>
+    </aside>
+    <div class="content">
+        <p>content</p>
+        <form id="name-input">
+            <input type="text" id="calcInput" name="name">
+            <button id="submit" name="name" type="submit">click me</button>
+            <div>
+            <button type="button" id="plus">+</button>
+            <button type="button" id="minus">-</button>
+            <button type="button" id="mul">*</button>
+            <button type="button" id="div">/</button>
+            <button type="button" id="eql">=</button>
+            <h4 id="msg"></h4>
+        </div>
+        <button type="button" id="game">game start</button>
+        </form>
+
+        <script>
+        //   const nameInput = document.querySelector('#name')
+        //     nameInput.addEventListener('change', function(e){
+        //         console.log(e.target)
+        //     })
+        //     console.log(nameInput)
+        //     console.log(nameForm)
+
+        //     const nameForm = document.querySelector('#name-input')
+        //     nameForm.addEventListener('submit', function(e){
+        //         e.preventDefault()
+        //         // console.log('form submited')
+        //         console.log(name.vale)
+        //     })
+
+            // const nameForm = document.querySelector('#name-input')
+            // nameForm.addEventListener('submit', function(e){
+            //     e.preventDefault()
+            //     console.log('form submited')
+            // })
+
+            // const nameInput = document.querySelector('#name')
+            // nameInput.addEventListener('change', function(e){
+            //     console.log(nameInput.value)
+            //     let age = 12
+            //     if(nameInput.value=='eunice'){
+            //         console.log(`${nameInput.value} is fine`)
+            //     }if (age > 18)
+            //     console.log('no')
+            //     else{
+            //         console.log('none')
+            //     }
+
+            // })
+
+            const submitBtn = document.querySelector('#submit');
+            submitBtn.addEventListener('click', function(){
+                let temp = true;
+                let i = 1
+                while(temp > 30){
+                    i++
+                    console.log('high')
+                    if(i > 10){
+                        temp = false;
+                        console.log('normal')
+                    }
+                }
+            })
+
+    const gameStart = document.querySelector('#game')
+
+    gameStart.addEventListener('click',function(){
+       window.prompt('guess any number')
+       
+    })
+
+
+        
+        </script>
+    </div>
+    </main>
+
+</body>
+</html>

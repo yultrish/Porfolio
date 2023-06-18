@@ -1,0 +1,114 @@
+.invoice-container{
+   width: 620px;
+   height: 877px;
+   padding: 2rem;
+   box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   font-weight: bolder;
+   margin: auto;
+}
+
+.invoice-header{
+   align-items: center;
+}
+
+.invoice-brand-address{
+   display: flex;
+   flex-flow: row;
+   justify-content: space-between;
+   background-color: firebrick;
+   padding: 0.5rem;
+   font-size: 2rem;
+   color: antiquewhite;
+}
+
+.invoice-head{
+   display: flex;
+   flex-direction: column;
+   padding: 2rem 0;
+}
+
+.invoice-infor{
+   display: grid;
+   grid-template-columns: repeat(3,1fr);
+   padding: 2rem 0;
+}
+
+.invoice-infor ul li:first-child{
+   padding: 1rem 0;
+}
+
+.invoice-infor nav{
+   display: flex;
+   text-align: right;
+   gap: 1rem;
+}
+
+.invoice-infor nav li{
+   padding: 0.3rem 0;
+}
+
+li{
+   list-style: none;
+}
+
+ table{
+   width: 100%;
+   padding: 2rem 0;
+   border-collapse: collapse;
+}
+
+thead{
+   background-color: #cccccccc;
+}
+
+tbody td,  tr th{
+   border: 2px solid #ccc;
+
+}
+
+tbody tr td{
+   padding:0.2rem 0;
+}
+
+tfoot td:first-child{
+     text-align: right;
+
+}
+
+
+
+.invoice-footer{
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem;
+  padding: 2rem 0;
+}
+
+th{
+   text-transform: uppercase;
+   padding: 0.17rem;
+}
+
+td:first-child{
+   text-align: center;
+ }
+
+ td:last-child{
+   text-align: right;
+ }
+
+ td:nth-child(3){
+   text-align: right;
+ }
+ 
+
+ tfoot td:last-child{
+   border-right: 2px solid #ccc;
+   border-left: 2px solid #ccc;
+   padding: 0.3rem;
+ }
+
+ tfoot td.total:last-child{
+   background-color: grey;
+   border: 2px solid #ccc;
+ } 

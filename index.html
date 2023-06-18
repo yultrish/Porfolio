@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header class="navigation">
+        <div class="brand">
+            <span>YulTrish</span>
+            <button class="btn">-</button>
+        </div>
+       <!--Tablet 600px-->
+        <nav class="small">
+            <ul>
+                <li class="active"><a href="/index.html">H</a></li>
+                <li><a href="/about.html">A</a></li>
+                <li><a href="/contact.html">C</a></li>
+                <li><a href="/project.html">P</a></li>
+            </ul>
+        </nav>
+        <section>
+
+            <!--Mobile and Normal screen 768px-->
+            <nav class="bigger"> 
+                <ul>
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="project.html">Project</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+    
+    <!--large screen-->
+    <main class="side">
+    <aside class="side-bar">
+        <ul>
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="project.html">Project</a></li>
+        </ul>
+    </aside>
+    <div class="content">
+        <p>content</p>
+    </div>
+    </main>
+    <input type="text" name="" id="calc-input">
+    <div>
+    <button id="plus">+</button>
+    <button id="minus">-</button>
+    <button id="mul">*</button>
+    <button id="div">/</button>
+    <button id="eql">=</button>
+    <table id="class">
+        <thead>
+            <tr>
+                <th>name</th>
+                <th>age</th>
+                <th>present</th>
+            </tr>
+
+            <tbody>
+                <tr>
+                    <td></td>
+                </tr>
+            </tbody>
+        </thead>
+    </table>
+</div>
+<button id="submit" name="name" type="submit" value="60">click me</button>
+   <script>
+        // console.log('hi')
+        const student = {
+                name: 'YT',
+                age: 12,
+                tel: "9998",
+                location:{
+                    north: 'tamale',
+                    south: 'Accra'
+                }
+            }
+
+            for(let name in student){
+                console.log(`${name}`)
+
+            }
+
+            let names = ['lizy','rash','jo']
+
+            let colleagues = [{name:'rash', present:true, age:13},{
+                name:'lizy',present: true, age:20},{name:'jo',present:false, age:18}
+            ]
+
+            console.log(names[0]);
+            console.log(colleagues[0]);
+
+            for(let colleague of colleagues){
+                console.log(colleague)
+            }
+
+           colleaguePresent = colleagues.filter(function (colleague){
+                if(colleague.present == true){
+                    return true
+                }
+
+            })
+
+            console.log(colleaguePresent)
+
+
+             colleaguePresent = colleagues.filter(function (colleague){
+                if(colleague.age < 20){
+                    return true;
+                }
+
+            })
+
+            console.log(colleaguePresent)
+ 5
+            colleaguePresent = colleagues.filter(function (colleague){
+                if(colleague.age < 20 || !colleague.present){
+                    return true;
+                }
+
+            })
+
+            console.log(colleaguePresent)
+
+            
+            colleaguePresent = colleagues.filter(function (colleague){
+                if((!colleague.present && colleague.age < 20) ||colleague.name.length > 5){
+                    return true;
+                }
+
+            })
+            console.log(colleaguePresent)
+
+            colleaguePresent = colleagues.find(function (colleague){
+                if((!colleague.present && colleague.age < 20) ||colleague.name.length > 5){
+                    return true;
+                }
+
+            })
+            console.log(colleaguePresent)
+            tbody = document.querySelector('tbody')
+            colleagues.forEach(function(colleageu){
+                row+= <tr>colleageu.name</tr>,<td>colleageu.age</td>,<td>colleague.present</td>
+                tbody.innerText = row;
+                console.log(tbody.innerText)
+            })
+
+            colleaguePresent = colleagues.map(function (colleague){
+    
+            })
+
+
+            // console.log(Object.keys(student))
+
+const submitBtn = document.querySelector('#submit');
+            submitBtn.addEventListener('click', function(){
+                window.prompt('temperature')
+             
+                let temp = true;
+                let i = 1
+                while(temp){
+                    i++
+                    console.log('high')
+                    if(i > 10){
+                        temp = false;
+                        console.log('normal')
+                    }
+                }
+            })
+
+            
+
+
+    // const calcInput = document.querySelector('#calc-input');
+    // const calcPlusButton = document.querySelector('#plus')
+    // const calcMinusButton = document.querySelector('#minus')
+    // const calccMulButton = document.querySelector('#mul')
+    // const calcDivButton = document.querySelector('#div')
+    // const calcEqlButton = document.querySelector('#eql')
+    
+    // calcMinusButton.addEventListener('click', function(){
+    //     ops = "-";
+    //     valueA = new Number(calcInput.value);
+    //     calcInput.focus()
+    // })
+
+    // calcPlusButton.addEventListener('click', function(){
+    //     ops = '+';
+    //     valueA = new Number(calcInput.value);
+    //     calcInput.focus()
+    // })
+       
+
+    // calcEqlButton.addEventListener('click', function(){
+    //     valueB = new Number (calcInput.value);
+    //     // if(ops == '-'){
+    //     //   valueC = valueA - valueB  
+    //     // }
+    //     // else if(ops == '+'){
+    //     //     valueC = valueA + valueB
+
+    //     // }
+
+    //     switch (oops) {
+    //         case '+':
+    //             valueC = valueA + valueB
+                
+    //             break;
+    //         case '-' :
+    //             valueC = valueA + valueB
+    //             break;
+    //         default:
+    //             break;
+    //     }
+    //     valueA = 2
+    //     valueB = 6
+    //     // valueC = valueA - valueB;
+    //     calcInput.value = valueC
+    //     // console.log(calcInput.value)
+    // })
+   
+
+
+
+
+
+   </script>
+
+</body>
+</html>

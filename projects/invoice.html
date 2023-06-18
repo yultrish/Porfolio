@@ -1,0 +1,134 @@
+    <div class="invoice-generator">
+        <form class="order-form">
+            <div class="input-group">
+                <label for="product">Item</label>
+                <select name="product" id="product">
+                    <option value="">Select Items</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="quantity">Quantity</label>
+                <input type="number" name="quantity" id="quantity">
+            </div>
+            <button type="submit" class="submit">Add Item</button>
+        </form>
+    </div>
+    <!-- beginning of invoice - html -->
+    <main class="invoice-container">
+        <section class="invoice-header">
+            <section class="invoice-brand-address">
+                <span>Yultrish</span>
+                <span>Invoice</span>
+            </section>
+
+            <section class="invoice-head">
+                <span>Patrice Lumba Street</span>
+                <span>Airport Residential, Accra</span>
+            </section>
+
+            <div class="invoice-infor">
+                <ul>
+                    <li>Bill To</li>
+                    <li>Jusie M Home</li>
+                    <li>4312 Wood Road</li>
+                    <li>Airport - Accra,</li>
+                </ul>
+                <ul>
+                    <li>Ship To</li>
+                    <li>Jusie M Home</li>
+                    <li>2919 Redbud Drive</li>
+                    <li>Airport - Accra,</li>
+                </ul>
+                <nav class="invoice-nav">
+                    <ul>
+                        <li>Invoice#</li>
+                        <li>Invoice Date</li>
+                        <li>P.O.#</li>
+                        <li>Due Date</li>
+                    </ul>
+                    <ul>
+                        <li>INT-001</li>
+                        <li>11/02/2019</li>
+                        <li>2412/2019</li>
+                        <li>26/02/2019</li>
+                    </ul>
+                </nav>
+            </div>
+            <section class="invoice-detail">
+                <table class="invoice-table">
+                    <thead>
+                        <tr>
+                        <th>QTY</th>
+                        <th>Description</th>
+                        <th>unit price</th>
+                        <th>amount</th>
+                    </tr>
+                    </thead>
+
+                    <tbody id="invoice-tbody">
+                        <!-- <tr>
+                            <td>1</td>
+                            <td>Front and rear brake Cables</td>
+                            <td>100</td>
+                            <td>100.00</td>
+                        </tr>
+
+                        <tr>
+                            <td>2</td>
+                            <td>New set of pedal arms</td>
+                            <td>25.00</td>
+                            <td>50.00</td>
+                        </tr>
+
+                        <tr>
+                            <td>3</td>
+                            <td>Labour 3hrs</td>
+                            <td>15.00</td>
+                            <td>45.00</td>
+                        </tr> -->
+
+                        <tfoot class="invoice-tfoot">
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td>Subtotal</td>
+                                <td class="subtotal">0</td>
+                            </tr>
+
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td>sales Tax 5%</td>
+                                <td class="tax-rate">0</td>
+                            </tr>
+
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td>TOTAL</td>
+                                <td class="total">0</td>
+                            </tr>
+                        </tfoot>
+                    </tbody>
+                </table>
+
+            </section>
+
+        <section>
+            <footer class="invoice-footer">
+                <ul>
+                <li>Terms & conditions</li>
+                <li>Payment is due within 15 days</li>
+            </ul>
+            <ul>
+                <li>Name of Bank</li>
+                <li>Account number: 1234567891012</li>
+                <li>Routing: 012244566</li>
+            </ul>
+            </footer>
+        </section>
+    </section>
+    </main>
+<style>
+    
+</style>
