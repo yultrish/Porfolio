@@ -55,6 +55,7 @@ function calculator(){
     let valueA = 0;
     let valueB = 0;
     let ops = "";
+    a = ""
 
 // id selectors for numbers and operators declared
 const resultBtn = document.querySelector('#results');
@@ -78,7 +79,7 @@ const clearBtn = document.querySelector('#clear');
 
 numbers.forEach(function(num){
   num.addEventListener('click', function(){
-     a = new Number(num.value)
+     a += new Number(num.value)
      resultBtn.value = a 
     resultBtn.focus()
   })
@@ -86,30 +87,42 @@ numbers.forEach(function(num){
 
 clearBtn.addEventListener('click', function(){
   resultBtn.value = '';
+  valueA = 0;
+  valueB = 0;
+  ops = 0;
+  a = '';
 })
 
 //  Event listeners for operators
 plusBtn.addEventListener('click', function() {
   valueA = new Number(resultBtn.value);
   ops = '+';
+  resultBtn.value = ops
+  a = ''
   resultBtn.focus()
 });
 
 minusBtn.addEventListener('click', function() {
   valueA = new Number(resultBtn.value);
   ops = '-';
+  resultBtn.value = ops
+  a = ''
   resultBtn.focus()
 });
 
 multiBtn.addEventListener('click', function() {
   valueA = new Number(resultBtn.value);
   ops = '*';
+  resultBtn.value = ops
+  a = ''
   resultBtn.focus()
 });
 
 divBtn.addEventListener('click', function() {
   valueA = new Number(resultBtn.value);
   ops = '/';
+  resultBtn.value = ops
+  a = ''
   resultBtn.focus()
 });
 
@@ -128,8 +141,11 @@ equalBtn.addEventListener('click', function() {
     valueC = valueA / valueB;
   }
 
-  valueA = 0;
-  resultBtn.value = valueC;
+  valueA = valueC;
+    ops = '';
+    a = '';
+    resultBtn.value = valueC;
+    resultBtn.focus();
 });
 }
 

@@ -6,9 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project Page</title>
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/invoice.css">
-    <script defer src="/js/main.js">js</script>
-    
+    <script src="./js/projects.js" defer></script> 
 </head>
 <body>
     <!-- beginning of side-bar navigation -->
@@ -20,10 +18,10 @@
        <!--Tablet 600px-->
         <nav class="small">
             <ul>
-                <li><a href="index.html">H</a></li>
-                <li><a href="about.html">A</a></li>
-                <li><a href="contact.html">C</a></li>
-                <li class="active"><a href="project.html">P</a></li>
+                <li><a href="/projects/index.html">H</a></li>
+                <li><a href="/about.html">A</a></li>
+                <li><a href="/contact.html">C</a></li>
+                <li class="active"><a href="/project.html">P</a></li>
             </ul>
         </nav>
         <section>
@@ -31,10 +29,10 @@
             <!--Mobile and Normal screen 768px-->
             <nav class="bigger"> 
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li class="active"><a href="project.html">Project</a></li>
+                    <li><a href="/projects/index.html">Home</a></li>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                    <li class="active"><a href="/project.html">Project</a></li>
                 </ul>
             </nav>
         </section>
@@ -44,168 +42,17 @@
     <main class="side">
     <aside class="side-bar">
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li class="active"><a href="project.html">Project</a></li>
+            <li><a href="/projects/index.html">Home</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+            <li class="active"><a href="/project.html">Project</a></li>
         </ul>
     </aside>
-    
-    <!-- input field for sum of two numbers and currency converter -->
-    <section class="input-container">
-        <h1>sum of two numbers</h1>
-        <div class="sum-inputs"> 
-        <div class="group-inputs">
-          <label for="num">Number A</label>
-          <input type="text" id="numA">
-        </div>
-    
-        <div class="group-inputs">
-          <label for="">Number B</label>
-          <input type="text" id="numB">
-        </div>
-       <div class="group-inputs">
-          <label for="">Sum</label>
-          <input type="text" id="sum">
-       </div>
-      </div>
-       <h3>Currency converter</h3>
-      <div class="converter-inputs">
-        <div class="group-inputs">
-         <label for="">Amount(usd)</label>
-         <input type="text" id="amount">
-        </div>
-    
-        <div class="group-inputs">
-         <label for="rate">Exchange Rate</label>
-         <input type="text" id="rate" class="rate">
-        </div>
-    
-        <div class="group-inputs">
-         <label for="">cedi-equivalent</label>
-         <input type="text" id="cedi-equivalent">
-        </div>
-      </div>
 
-      <main class="invoice-container">
-        <section class="invoice-header">
-            <section class="invoice-brand-address">
-                <span>Yultrish</span>
-                <span>Invoice</span>
-            </section>
-
-            <section class="invoice-head">
-                <span>Patrice Lumba Street</span>
-                <span>Airport Residential, Accra</span>
-            </section>
-
-            <div class="invoice-infor">
-                <ul>
-                    <li>Bill To</li>
-                    <li>Jusie M Home</li>
-                    <li>4312 Wood Road</li>
-                    <li>Airport - Accra,</li>
-                </ul>
-                <ul>
-                    <li>Ship To</li>
-                    <li>Jusie M Home</li>
-                    <li>2919 Redbud Drive</li>
-                    <li>Airport - Accra,</li>
-                </ul>
-                <nav class="invoice-nav">
-                    <ul>
-                        <li>Invoice#</li>
-                        <li>Invoice Date</li>
-                        <li>P.O.#</li>
-                        <li>Due Date</li>
-                    </ul>
-                    <ul>
-                        <li>INT-001</li>
-                        <li>11/02/2019</li>
-                        <li>2412/2019</li>
-                        <li>26/02/2019</li>
-                    </ul>
-                </nav>
-            </div>
-            <section class="invoice-detail">
-                <table>
-                    <thead>
-                        <tr>
-                        <th>QTY</th>
-                        <th>Description</th>
-                        <th>unit price</th>
-                        <th>amount</th>
-                    </tr>
-                    </thead>
-
-                    <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>Front and rear brake Cables</td>
-                            <td>100</td>
-                            <td>100.00</td>
-                        </tr>
-
-                        <tr>
-                            <td>2</td>
-                            <td>New set of pedal arms</td>
-                            <td>25.00</td>
-                            <td>50.00</td>
-                        </tr>
-
-                        <tr>
-                            <td>3</td>
-                            <td>Labour 3hrs</td>
-                            <td>15.00</td>
-                            <td>45.00</td>
-                        </tr>
-
-                        <tfoot>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td>Subtotal</td>
-                                <td>195.00</td>
-                            </tr>
-
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td>sales Tax 5%</td>
-                                <td>9.75</td>
-                            </tr>
-
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td>TOTAL</td>
-                                <td class="total">$204.75</td>
-                            </tr>
-                        </tfoot>
-                    </tbody>
-                </table>
-
-            </section>
-
-        <section>
-            <footer class="invoice-footer">
-                <ul>
-                <li>Terms & conditions</li>
-                <li>Payment is due within 15 days</li>
-            </ul>
-            <ul>
-                <li>Name of Bank</li>
-                <li>Account number: 1234567891012</li>
-                <li>Routing: 012244566</li>
-            </ul>
-            </footer>
-        </section>
-
+    <section class="container-projects">
+       
+                  
     </section>
-    </main>
-       </section>
-       <!-- end of input field -->
-    </main>
 
 </body>
 </html>
